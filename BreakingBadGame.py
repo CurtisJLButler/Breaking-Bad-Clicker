@@ -1,8 +1,6 @@
 import tkinter as tk
-from PIL import ImageTk, Image
 import os
-tk.PhotoImage = os.getcwd()
- 
+
 root = tk.Tk()
 frame = tk.Frame(root)
 
@@ -45,17 +43,17 @@ cash.pack()
 methAmount = tk.Label(text = 0)
 methAmount.pack()
 
-ww = tk.PhotoImage(file = "os.path.realpath(os.path.join(os.path.dirname(__file__), "Pictures", ww.png"))")
+ww = tk.PhotoImage(file = str(os.getcwd()) + "\Pictures\WW.png")
 makeMeth = tk.Button(text = "More crystal jesse", image = ww, command = make)
-makeMeth.pack()
+makeMeth.pack(padx=5, pady=5)
 
 
 containers = tk.Button(text = "Bigger Containers jesse", command = biggerContainers)
-containers.pack()
+containers.pack(padx=5, pady=5)
 
-gus = tk.PhotoImage(file = r"\Pictures\gus.png")
+gus = tk.PhotoImage(file = str(os.getcwd()) + "\Pictures\gus.png")
 sell = tk.Button(text = "Sell meth", image = gus, command = sellMeth)
-sell.pack()
+sell.pack(padx=5, pady=5)
 
 
 frame.pack(padx = 5, pady = 5)
