@@ -3,7 +3,7 @@ import os
 
 root = tk.Tk()
 frame = tk.Frame(root)
-
+dir = str(os.getcwd())
 # creating the tkinter window
 
 
@@ -43,17 +43,17 @@ cash.pack()
 methAmount = tk.Label(text = 0)
 methAmount.pack()
 
-ww = tk.PhotoImage(file = str(os.getcwd()) + "\Pictures\WW.png")
+ww = tk.PhotoImage(file = dir + "\Pictures\WW.png")
 makeMeth = tk.Button(text = "More crystal jesse", image = ww, command = make)
-makeMeth.pack(padx=5, pady=5)
+makeMeth.pack()
 
 
 containers = tk.Button(text = "Bigger Containers jesse", command = biggerContainers)
-containers.pack(padx=5, pady=5)
+containers.pack()
 
-gus = tk.PhotoImage(file = str(os.getcwd()) + "\Pictures\gus.png")
+gus = tk.PhotoImage(file = dir + "\Pictures\gus.png")
 sell = tk.Button(text = "Sell meth", image = gus, command = sellMeth)
-sell.pack(padx=5, pady=5)
+sell.pack()
 
 
 frame.pack(padx = 5, pady = 5)
