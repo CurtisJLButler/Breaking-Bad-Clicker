@@ -42,8 +42,8 @@ cash.pack()
 
 methAmount = tk.Label(text = 0)
 methAmount.pack()
-
-ww = tk.PhotoImage(file = dir + "\Pictures\WW.png")
+walterWhite = dir + "\Pictures\ww.png"
+ww = tk.PhotoImage(file = dir + "\Pictures\ww.png")
 makeMeth = tk.Button(text = "More crystal jesse", image = ww, command = make)
 makeMeth.pack()
 
